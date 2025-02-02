@@ -4,6 +4,6 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-    <bean id="alien" class="com.spring1.Alien" />
+    <bean id="alien" class="com.spring1.Alien" scope="prototype"/>
     <bean id="laptop" class="com.spring1.Laptop" />
 </beans>
