@@ -4,6 +4,15 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-    <bean id="alien" class="com.spring1.Alien" scope="prototype"/>
-    <bean id="laptop" class="com.spring1.Laptop" />
+    <bean id="alien" class="com.spring1.Alien" scope="singleton" autowire="byName">
+<!--        <property name="age" value="44" />-->
+<!--        <property name="com" ref="laptop"/>-->
+<!--        <constructor-arg name="lap" ref="laptop"/>-->
+<!--        <constructor-arg name="age" value="22"/>-->
+<!--               <constructor-arg index="0" value="22"/>-->
+<!--                <constructor-arg index="1" ref="laptop"/>-->
+
+    </bean>
+    <bean id="com" class="com.spring1.Laptop" />
+    <bean id="desktop" class="com.spring1.Desktop" />
 </beans>
